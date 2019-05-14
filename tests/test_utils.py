@@ -9,8 +9,8 @@ import enum
 from typing import Optional
 import unittest
 
-import pgsqltoolsservice.utils as utils
-from pgsqltoolsservice.serialization import Serializable
+import snowflakesqltoolsservice.utils as utils
+from snowflakesqltoolsservice.serialization import Serializable
 
 
 class TestUtils(unittest.TestCase):

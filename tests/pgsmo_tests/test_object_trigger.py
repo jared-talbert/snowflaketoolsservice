@@ -5,7 +5,7 @@
 
 import unittest
 
-from pgsmo import Trigger
+from snow import Trigger
 from tests.pgsmo_tests.node_test_base import NodeObjectTestBase
 
 

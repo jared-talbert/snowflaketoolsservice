@@ -8,8 +8,8 @@
 import unittest
 from unittest import mock
 
-from pgsqltoolsservice.tasks import Task, TaskResult, TaskStatus
-from pgsqltoolsservice.utils import constants
+from snowflakesqltoolsservice.tasks import Task, TaskResult, TaskStatus
+from snowflakesqltoolsservice.utils import constants
 from tests import utils
 
 

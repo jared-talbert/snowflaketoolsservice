@@ -6,8 +6,8 @@
 import os
 import unittest
 
-from pgsqltoolsservice.workspace.contracts import Position, Range, TextDocumentChangeEvent
-from pgsqltoolsservice.workspace.workspace import ScriptFile
+from snowflakesqltoolsservice.workspace.contracts import Position, Range, TextDocumentChangeEvent
+from snowflakesqltoolsservice.workspace.workspace import ScriptFile
 
 
 class TestScriptFile(unittest.TestCase):

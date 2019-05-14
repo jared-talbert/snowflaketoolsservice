@@ -5,8 +5,8 @@
 
 import unittest
 
-from pgsmo.objects.server.server import Server
-from pgsmo.objects.table_objects.column import Column
+from snow.objects.server.server import Server
+from snow.objects.table_objects.column import Column
 from tests.pgsmo_tests.node_test_base import NodeObjectTestBase
 import tests.pgsmo_tests.utils as utils
 

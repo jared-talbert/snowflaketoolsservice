@@ -7,7 +7,7 @@ import io
 import unittest
 import unittest.mock as mock
 
-from pgsqltoolsservice.hosting.json_reader import JSONRPCReader
+from snowflakesqltoolsservice.hosting.json_reader import JSONRPCReader
 import tests.utils as utils
 
 

@@ -5,7 +5,7 @@
 
 import unittest
 
-from pgsmo.objects.tablespace.tablespace import Tablespace
+from snow.objects.tablespace.tablespace import Tablespace
 from tests.pgsmo_tests.node_test_base import NodeObjectTestBase
 
 

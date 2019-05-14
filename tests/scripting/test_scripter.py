@@ -8,12 +8,12 @@ from typing import List, Any
 import unittest
 from unittest import mock
 
-from pgsmo import Table, DataType, Schema, Database, Server, Column, CheckConstraint, ExclusionConstraint, ForeignKeyConstraint, IndexConstraint, \
+from snow import Table, DataType, Schema, Database, Server, Column, CheckConstraint, ExclusionConstraint, ForeignKeyConstraint, IndexConstraint, \
     Rule, Trigger, Index
-from pgsmo.objects.node_object import NodeCollection
-from pgsqltoolsservice.metadata.contracts.object_metadata import ObjectMetadata
-import pgsqltoolsservice.scripting.scripter as scripter
-from pgsqltoolsservice.scripting.scripting_service import ScriptingService
+from snow.objects.node_object import NodeCollection
+from snowflakesqltoolsservice.metadata.contracts.object_metadata import ObjectMetadata
+import snowflakesqltoolsservice.scripting.scripter as scripter
+from snowflakesqltoolsservice.scripting.scripting_service import ScriptingService
 
 
 import tests.utils as utils
@@ -108,7 +108,7 @@ class TestScripter(unittest.TestCase):
 
             # Then:
             # ... I should get something back
-            # NOTE: The actual contents of the script is tested in the PGSMO object's unit tests
+            # NOTE: The actual contents of the script is tested in the snow object's unit tests
             utils.assert_not_none_or_whitespace(result)
 
             # ... The URN should have been used to get the object
@@ -116,7 +116,7 @@ class TestScripter(unittest.TestCase):
 
 
 class TestScripterOld(unittest.TestCase):
-    # TODO: Remove in favor of script tests in the PGSMO objects (see: https://github.com/Microsoft/carbon/issues/1734)
+    # TODO: Remove in favor of script tests in the snow objects (see: https://github.com/Microsoft/carbon/issues/1734)
 
     def setUp(self):
         """Set up mock objects for testing the scripting service.

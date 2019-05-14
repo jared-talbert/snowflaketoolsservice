@@ -7,9 +7,9 @@ import unittest
 import tests.pgsmo_tests.utils as utils
 import unittest.mock as mock    # noqa
 
-from pgsmo.objects.database.database import Database
-from pgsmo.objects.node_object import NodeCollection
-from pgsmo.objects.server.server import Server
+from snow.objects.database.database import Database
+from snow.objects.node_object import NodeCollection
+from snow.objects.server.server import Server
 from tests.pgsmo_tests.node_test_base import NodeObjectTestBase
 from tests.utils import MockConnection    # noqa
 

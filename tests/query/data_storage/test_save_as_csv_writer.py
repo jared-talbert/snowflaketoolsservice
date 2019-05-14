@@ -6,9 +6,9 @@
 import unittest
 from unittest import mock
 
-from pgsqltoolsservice.query.contracts import DbColumn, DbCellValue
-from pgsqltoolsservice.query.data_storage import SaveAsCsvWriter
-from pgsqltoolsservice.query_execution.contracts import SaveResultsAsCsvRequestParams
+from snowflakesqltoolsservice.query.contracts import DbColumn, DbCellValue
+from snowflakesqltoolsservice.query.data_storage import SaveAsCsvWriter
+from snowflakesqltoolsservice.query_execution.contracts import SaveResultsAsCsvRequestParams
 
 
 class TestSaveAsCsvWriter(unittest.TestCase):

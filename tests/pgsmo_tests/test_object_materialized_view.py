@@ -5,7 +5,7 @@
 
 import unittest
 
-from pgsmo.objects.view.materialized_view import MaterializedView
+from snow.objects.view.materialized_view import MaterializedView
 from tests.pgsmo_tests.node_test_base import NodeObjectTestBase
 
 

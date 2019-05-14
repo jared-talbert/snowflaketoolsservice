@@ -5,7 +5,7 @@
 
 import unittest
 
-from pgsmo.objects.role.role import Role
+from snow.objects.role.role import Role
 from tests.pgsmo_tests.node_test_base import NodeObjectTestBase
 
 

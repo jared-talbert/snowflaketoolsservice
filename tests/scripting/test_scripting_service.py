@@ -6,13 +6,13 @@
 import unittest
 from unittest import mock
 
-from pgsqltoolsservice.connection import ConnectionService
-from pgsqltoolsservice.connection.contracts import ConnectionCompleteParams
-from pgsqltoolsservice.utils.constants import CONNECTION_SERVICE_NAME
-from pgsqltoolsservice.hosting import JSONRPCServer, ServiceProvider
-from pgsqltoolsservice.scripting.scripter import Scripter
-from pgsqltoolsservice.scripting.scripting_service import ScriptingService
-from pgsqltoolsservice.scripting.contracts.scriptas_request import ScriptOperation, ScriptAsParameters, ScriptAsResponse
+from snowflakesqltoolsservice.connection import ConnectionService
+from snowflakesqltoolsservice.connection.contracts import ConnectionCompleteParams
+from snowflakesqltoolsservice.utils.constants import CONNECTION_SERVICE_NAME
+from snowflakesqltoolsservice.hosting import JSONRPCServer, ServiceProvider
+from snowflakesqltoolsservice.scripting.scripter import Scripter
+from snowflakesqltoolsservice.scripting.scripting_service import ScriptingService
+from snowflakesqltoolsservice.scripting.contracts.scriptas_request import ScriptOperation, ScriptAsParameters, ScriptAsResponse
 from tests.mock_request_validation import RequestFlowValidator
 from tests.pgsmo_tests.utils import MockConnection      # TODO: Replace with global
 import tests.utils as utils
@@ -104,7 +104,7 @@ class TestScriptingService(unittest.TestCase):
             self.assertEqual(response.script, TestScriptingService.MOCK_SCRIPT)
 
         # ... Create a scripter with mocked out calls
-        patch_path = 'pgsqltoolsservice.scripting.scripting_service.Scripter'
+        patch_path = 'snowflakesqltoolsservice.scripting.scripting_service.Scripter'
         with mock.patch(patch_path) as scripter_patch:
             mock_scripter: Scripter = Scripter(mock_connection)
             mock_scripter.script = mock.MagicMock(return_value=TestScriptingService.MOCK_SCRIPT)

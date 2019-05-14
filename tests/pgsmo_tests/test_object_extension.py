@@ -5,7 +5,7 @@
 
 import unittest
 
-from pgsmo import Extension
+from snow import Extension
 from tests.pgsmo_tests.node_test_base import NodeObjectTestBase
 
 

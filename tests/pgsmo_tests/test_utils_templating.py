@@ -9,7 +9,7 @@ import unittest.mock as mock
 
 import jinja2
 
-import pgsmo.utils as pgsmo_utils
+import snow.utils as pgsmo_utils
 
 
 class TestTemplatingUtils(unittest.TestCase):
@@ -25,7 +25,7 @@ class TestTemplatingUtils(unittest.TestCase):
     # GET_TEMPLATE_PATH TESTS ##############################################
     def test_get_template_path_no_match(self):
         # Setup: Create a mock os walker
-        with mock.patch('pgsmo.utils.templating.os.walk', _os_walker, create=True):
+        with mock.patch('snow.utils.templating.os.walk', _os_walker, create=True):
             with self.assertRaises(ValueError):
                 # If: I attempt to get the path of a template when it does not exist
                 # Then: An exception should be thrown
@@ -33,7 +33,7 @@ class TestTemplatingUtils(unittest.TestCase):
 
     def test_get_template_path_default(self):
         # Setup: Create a mock os walker
-        with mock.patch('pgsmo.utils.templating.os.walk', _os_walker, create=True):
+        with mock.patch('snow.utils.templating.os.walk', _os_walker, create=True):
             # If: I attempt to get a template path when there is not a good version match
             template_path = pgsmo_utils.templating.get_template_path(TEMPLATE_ROOT_NAME, 'template.sql', (8, 1, 0))
 
@@ -42,7 +42,7 @@ class TestTemplatingUtils(unittest.TestCase):
 
     def test_get_template_path_exact_version_match(self):
         # Setup: Create a mock os walker
-        with mock.patch('pgsmo.utils.templating.os.walk', _os_walker, create=True):
+        with mock.patch('snow.utils.templating.os.walk', _os_walker, create=True):
             # If: I attempt to get the path of a template when there's a exact version match
             template_path = pgsmo_utils.templating.get_template_path(TEMPLATE_ROOT_NAME, 'template.sql', (9, 0, 0))
 
@@ -51,7 +51,7 @@ class TestTemplatingUtils(unittest.TestCase):
 
     def test_get_template_path_plus_match(self):
         # Setup: Create a mock os walker
-        with mock.patch('pgsmo.utils.templating.os.walk', _os_walker, create=True):
+        with mock.patch('snow.utils.templating.os.walk', _os_walker, create=True):
             # If: I attempt to get a template path when there is a version range that matches
             template_path = pgsmo_utils.templating.get_template_path(TEMPLATE_ROOT_NAME, 'template.sql', (9, 3, 0))
 
@@ -60,7 +60,7 @@ class TestTemplatingUtils(unittest.TestCase):
 
     def test_get_template_path_invalid_folder(self):
         # Setup: Create a mock os walker that has an invalid folder in it
-        with mock.patch('pgsmo.utils.templating.os.walk', _bad_os_walker, create=True):
+        with mock.patch('snow.utils.templating.os.walk', _bad_os_walker, create=True):
             with self.assertRaises(ValueError):
                 # If: I attempt to get a template path when there is an invalid folder in the template folder
                 # Then: I should get an exception

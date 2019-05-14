@@ -10,8 +10,8 @@ import unittest.mock as mock
 from psycopg2 import DatabaseError
 from psycopg2.extensions import Column, connection
 
-from pgsmo import Server
-from pgsmo.objects.node_object import NodeCollection, NodeObject
+from snow import Server
+from snow.objects.node_object import NodeCollection, NodeObject
 
 
 # MOCK NODE OBJECT #########################################################

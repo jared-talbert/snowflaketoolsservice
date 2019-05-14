@@ -7,16 +7,16 @@ from typing import List  # noqa
 import unittest
 from unittest import mock
 
-from pgsqltoolsservice.edit_data import DataEditorSession
-from pgsqltoolsservice.edit_data.contracts import InitializeEditParams, EditInitializerFilter, CreateRowResponse  # noqa
+from snowflakesqltoolsservice.edit_data import DataEditorSession
+from snowflakesqltoolsservice.edit_data.contracts import InitializeEditParams, EditInitializerFilter, CreateRowResponse  # noqa
 from tests.utils import MockConnection, MockCursor
-from pgsqltoolsservice.edit_data import EditTableMetadata, EditColumnMetadata, DataEditSessionExecutionState
-from pgsqltoolsservice.query import (
+from snowflakesqltoolsservice.edit_data import EditTableMetadata, EditColumnMetadata, DataEditSessionExecutionState
+from snowflakesqltoolsservice.query import (
     Batch, create_result_set, ExecutionState, Query, QueryExecutionSettings, QueryEvents, ResultSet, ResultSetStorageType
 )
-from pgsqltoolsservice.query.contracts import DbColumn
-from pgsqltoolsservice.edit_data.update_management.row_edit import EditScript
-from pgsqltoolsservice.edit_data.update_management import RowDelete
+from snowflakesqltoolsservice.query.contracts import DbColumn
+from snowflakesqltoolsservice.edit_data.update_management.row_edit import EditScript
+from snowflakesqltoolsservice.edit_data.update_management import RowDelete
 
 
 class TestDataEditorSession(unittest.TestCase):
@@ -58,7 +58,7 @@ class TestDataEditorSession(unittest.TestCase):
         columns_info = []
         get_column_info_mock = mock.Mock(return_value=columns_info)
 
-        with mock.patch('pgsqltoolsservice.query.in_memory_result_set.get_columns_info', new=get_column_info_mock):
+        with mock.patch('snowflakesqltoolsservice.query.in_memory_result_set.get_columns_info', new=get_column_info_mock):
             result_set.read_result_to_end(cursor)
 
         return result_set

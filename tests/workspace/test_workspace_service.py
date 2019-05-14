@@ -10,10 +10,10 @@ from typing import Tuple
 import unittest
 from unittest.mock import MagicMock
 
-from pgsqltoolsservice.hosting import JSONRPCServer, NotificationContext, ServiceProvider   # noqa
-from pgsqltoolsservice.workspace import WorkspaceService, IntellisenseConfiguration    # noqa
-from pgsqltoolsservice.workspace.workspace import Workspace, ScriptFile
-from pgsqltoolsservice.workspace.contracts import (
+from snowflakesqltoolsservice.hosting import JSONRPCServer, NotificationContext, ServiceProvider   # noqa
+from snowflakesqltoolsservice.workspace import WorkspaceService, IntellisenseConfiguration    # noqa
+from snowflakesqltoolsservice.workspace.workspace import Workspace, ScriptFile
+from snowflakesqltoolsservice.workspace.contracts import (
     Configuration,
     DidChangeConfigurationParams,
     DidCloseTextDocumentParams,

@@ -5,7 +5,7 @@
 
 import unittest
 
-from pgsqltoolsservice.hosting.json_message import JSONRPCMessage, JSONRPCMessageType
+from snowflakesqltoolsservice.hosting.json_message import JSONRPCMessage, JSONRPCMessageType
 
 
 class JsonRpcMessageTests(unittest.TestCase):

@@ -6,7 +6,7 @@
 from abc import ABCMeta
 import unittest
 
-from pgsmo.objects.table_objects.constraints import (
+from snow.objects.table_objects.constraints import (
     CheckConstraint, ExclusionConstraint, ForeignKeyConstraint, IndexConstraint
 )
 from tests.pgsmo_tests.node_test_base import NodeObjectTestBase

@@ -8,8 +8,8 @@ import unittest
 from unittest import mock
 import psycopg2
 
-from pgsmo import Database, NodeCollection, Schema, Server
-from pgsqltoolsservice.language.metadata_executor import MetadataExecutor
+from snow import Database, NodeCollection, Schema, Server
+from snowflakesqltoolsservice.language.metadata_executor import MetadataExecutor
 
 import tests.pgsmo_tests.utils as utils
 

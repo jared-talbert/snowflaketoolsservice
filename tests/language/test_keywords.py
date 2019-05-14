@@ -8,11 +8,11 @@
 from typing import List
 import unittest
 
-from pgsqltoolsservice.language.contracts import (
+from snowflakesqltoolsservice.language.contracts import (
     CompletionItem, CompletionItemKind
 )
-from pgsqltoolsservice.language.keywords import DefaultCompletionHelper
-from pgsqltoolsservice.workspace.contracts import (
+from snowflakesqltoolsservice.language.keywords import DefaultCompletionHelper
+from snowflakesqltoolsservice.workspace.contracts import (
     Range
 )
 

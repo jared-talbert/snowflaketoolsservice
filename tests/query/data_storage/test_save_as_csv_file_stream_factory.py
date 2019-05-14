@@ -6,9 +6,9 @@
 import unittest
 from unittest import mock
 
-from pgsqltoolsservice.query.data_storage import SaveAsCsvFileStreamFactory
-from pgsqltoolsservice.query.contracts import SaveResultsRequestParams
-from pgsqltoolsservice.query.data_storage import SaveAsCsvWriter, ServiceBufferFileStreamReader
+from snowflakesqltoolsservice.query.data_storage import SaveAsCsvFileStreamFactory
+from snowflakesqltoolsservice.query.contracts import SaveResultsRequestParams
+from snowflakesqltoolsservice.query.data_storage import SaveAsCsvWriter, ServiceBufferFileStreamReader
 
 
 class TestSaveAsCsvFileStreamFactory(unittest.TestCase):

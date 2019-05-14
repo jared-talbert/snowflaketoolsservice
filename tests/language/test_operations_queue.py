@@ -9,15 +9,15 @@ from typing import Callable, List, Optional, Tuple  # noqa
 import unittest
 from unittest import mock
 
-from pgsqltoolsservice.hosting import JSONRPCServer, ServiceProvider
-from pgsqltoolsservice.utils import constants
-from pgsqltoolsservice.connection.contracts import ConnectionDetails, ConnectRequestParams  # noqa
-from pgsqltoolsservice.connection import ConnectionService, ConnectionInfo
-from pgsqltoolsservice.language.operations_queue import (
+from snowflakesqltoolsservice.hosting import JSONRPCServer, ServiceProvider
+from snowflakesqltoolsservice.utils import constants
+from snowflakesqltoolsservice.connection.contracts import ConnectionDetails, ConnectRequestParams  # noqa
+from snowflakesqltoolsservice.connection import ConnectionService, ConnectionInfo
+from snowflakesqltoolsservice.language.operations_queue import (
     ConnectionContext, OperationsQueue, QueuedOperation, INTELLISENSE_URI
 )
 
-COMPLETIONREFRESHER_PATH_PATH = 'pgsqltoolsservice.language.operations_queue.CompletionRefresher'
+COMPLETIONREFRESHER_PATH_PATH = 'snowflakesqltoolsservice.language.operations_queue.CompletionRefresher'
 
 
 class TestOperationsQueue(unittest.TestCase):

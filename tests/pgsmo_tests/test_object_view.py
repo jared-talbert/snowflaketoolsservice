@@ -5,7 +5,7 @@
 
 import unittest
 
-from pgsmo.objects.view.view import View
+from snow.objects.view.view import View
 from tests.pgsmo_tests.node_test_base import NodeObjectTestBase
 
 

@@ -10,10 +10,10 @@ import urllib.parse as parse
 
 import inflection
 
-from pgsmo.objects.node_object import NodeCollection, NodeLazyPropertyCollection
-from pgsmo.objects.database.database import Database
-from pgsmo.objects.server.server import Server
-from pgsmo.utils.querying import ServerConnection
+from snow.objects.node_object import NodeCollection, NodeLazyPropertyCollection
+from snow.objects.database.database import Database
+from snow.objects.server.server import Server
+from snow.utils.querying import ServerConnection
 import tests.pgsmo_tests.utils as utils
 
 

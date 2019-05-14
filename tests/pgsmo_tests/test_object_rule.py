@@ -5,7 +5,7 @@
 
 import unittest
 
-from pgsmo.objects.table_objects.rule import Rule
+from snow.objects.table_objects.rule import Rule
 from tests.pgsmo_tests.node_test_base import NodeObjectTestBase
 
 

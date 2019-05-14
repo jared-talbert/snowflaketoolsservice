@@ -5,7 +5,7 @@
 
 import unittest
 
-import pgsmo.utils as pgsmo_utils
+import snow.utils as pgsmo_utils
 import tests.pgsmo_tests.utils as utils
 
 
