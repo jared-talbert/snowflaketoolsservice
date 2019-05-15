@@ -2,7 +2,7 @@
 The Snowflake Tools Service is an application that provides core functionality for various Snowflake Server tools.  These features include the following:
 * Connection management
 * Language Service support using VS Code protocol
-* Query execution and resultset management
+* Query execution and result set management
 
 It is based on the [Microsoft SQL Tools Service](https://github.com/jared-talbert/snowflaketoolsservice) and [Snowflake Python Connector](https://docs.snowflake.net/manuals/user-guide/python-connector.html).
 
