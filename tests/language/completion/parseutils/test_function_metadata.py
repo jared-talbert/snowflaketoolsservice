@@ -5,7 +5,7 @@
 
 import unittest
 
-from snowflakesqltoolsservice.language.completion.packages.parseutils.meta import FunctionMetadata
+from snowflaketoolsservice.language.completion.packages.parseutils.meta import FunctionMetadata
 
 
 class TestFunctionMetadata(unittest.TestCase):

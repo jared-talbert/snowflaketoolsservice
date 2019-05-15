@@ -8,7 +8,7 @@ import unittest
 import unittest.mock as mock
 import psycopg2
 
-from snowflakesqltoolsservice.hosting import NotificationContext, RequestContext, ServiceProvider
+from snowflaketoolsservice.hosting import NotificationContext, RequestContext, ServiceProvider
 
 
 def assert_not_none_or_empty(value: str):

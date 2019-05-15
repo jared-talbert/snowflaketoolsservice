@@ -8,10 +8,10 @@ import unittest.mock as mock
 
 import psycopg2
 
-from snowflakesqltoolsservice.admin import AdminService
-from snowflakesqltoolsservice.admin.contracts import GET_DATABASE_INFO_REQUEST, GetDatabaseInfoParameters, GetDatabaseInfoResponse
-from snowflakesqltoolsservice.connection import ConnectionService
-from snowflakesqltoolsservice.utils import constants
+from snowflaketoolsservice.admin import AdminService
+from snowflaketoolsservice.admin.contracts import GET_DATABASE_INFO_REQUEST, GetDatabaseInfoParameters, GetDatabaseInfoResponse
+from snowflaketoolsservice.connection import ConnectionService
+from snowflaketoolsservice.utils import constants
 from tests.integration import get_connection_details, integration_test
 from tests.mocks.service_provider_mock import ServiceProviderMock
 from tests.utils import MockConnection, MockCursor, MockRequestContext

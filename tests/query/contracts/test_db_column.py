@@ -5,8 +5,8 @@
 
 import unittest
 
-import snowflakesqltoolsservice.parsers.datatypes as datatypes
-from snowflakesqltoolsservice.query.contracts import DbColumn
+import snowflaketoolsservice.parsers.datatypes as datatypes
+from snowflaketoolsservice.query.contracts import DbColumn
 
 
 class TestDbColumn(unittest.TestCase):

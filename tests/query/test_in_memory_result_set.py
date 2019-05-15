@@ -7,9 +7,9 @@ import unittest
 from unittest import mock
 
 import tests.utils as utils
-from snowflakesqltoolsservice.query.result_set import ResultSetEvents
-from snowflakesqltoolsservice.query.in_memory_result_set import InMemoryResultSet
-from snowflakesqltoolsservice.query.contracts import SaveResultsRequestParams
+from snowflaketoolsservice.query.result_set import ResultSetEvents
+from snowflaketoolsservice.query.in_memory_result_set import InMemoryResultSet
+from snowflaketoolsservice.query.contracts import SaveResultsRequestParams
 from tests.query.test_file_storage_result_set import MockWriter
 
 
@@ -69,7 +69,7 @@ class TestInMemoryResultSet(unittest.TestCase):
     def test_read_result_to_end(self):
 
         get_column_info_mock = mock.Mock()
-        with mock.patch('snowflakesqltoolsservice.query.in_memory_result_set.get_columns_info', new=get_column_info_mock):
+        with mock.patch('snowflaketoolsservice.query.in_memory_result_set.get_columns_info', new=get_column_info_mock):
             self._result_set.read_result_to_end(self._cursor)
 
         self.assertEqual(len(self._result_set.rows), 2)

@@ -6,8 +6,8 @@
 import unittest
 import unittest.mock as mock
 
-from snowflakesqltoolsservice.hosting.json_rpc_server import JSONRPCServer
-from snowflakesqltoolsservice.hosting.service_provider import ServiceProvider
+from snowflaketoolsservice.hosting.json_rpc_server import JSONRPCServer
+from snowflaketoolsservice.hosting.service_provider import ServiceProvider
 import tests.utils as utils
 
 

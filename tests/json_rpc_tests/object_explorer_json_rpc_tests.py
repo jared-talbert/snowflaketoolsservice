@@ -8,7 +8,7 @@ import json
 import functools
 import psycopg2
 
-from snowflakesqltoolsservice.hosting.json_message import JSONRPCMessageType
+from snowflaketoolsservice.hosting.json_message import JSONRPCMessageType
 from tests.integration import get_connection_details, create_extra_test_database, integration_test
 from tests.json_rpc_tests import JSONRPCTestCase, DefaultRPCTestMessages, RPCTestMessage
 from tests.json_rpc_tests.object_explorer_test_metadata import META_DATA, CREATE_SCRIPTS, GET_OID_SCRIPTS

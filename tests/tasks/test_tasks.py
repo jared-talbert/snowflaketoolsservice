@@ -8,8 +8,8 @@
 import unittest
 from unittest import mock
 
-from snowflakesqltoolsservice.tasks import Task, TaskResult, TaskStatus
-from snowflakesqltoolsservice.utils import constants
+from snowflaketoolsservice.tasks import Task, TaskResult, TaskStatus
+from snowflaketoolsservice.utils import constants
 from tests import utils
 
 

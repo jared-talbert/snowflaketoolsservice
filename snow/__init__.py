@@ -4,7 +4,7 @@
 # --------------------------------------------------------------------------------------------
 
 # NOTE: Server must be the first import, otherwise circular dependencies block proper importing
-from snow.objects.server.server import Server
+from objects.server.server import Server
 
 from snow.objects.node_object import NodeCollection, NodeObject
 from snow.objects.scripting_mixins import ScriptableCreate, ScriptableDelete, ScriptableUpdate, ScriptableSelect

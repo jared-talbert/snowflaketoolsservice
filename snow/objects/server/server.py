@@ -6,8 +6,10 @@
 from typing import Dict, List, Mapping, Optional, Tuple, Callable      # noqa
 from urllib.parse import ParseResult, urlparse, quote_plus       # noqa
 
-from psycopg2 import ProgrammingError
-from psycopg2.extensions import connection
+# from psycopg2 import ProgrammingError
+# from psycopg2.extensions import connection
+
+from snowflake.connector import connection
 
 from snow.objects.node_object import NodeObject, NodeCollection, NodeLazyPropertyCollection
 from snow.objects.database.database import Database
@@ -17,7 +19,6 @@ import snow.utils as utils
 
 SEARCH_PATH_QUERY = 'SELECT * FROM unnest(current_schemas(true))'
 SEARCH_PATH_QUERY_FALLBACK = 'SELECT * FROM current_schemas(true)'
-
 
 class Server:
     TEMPLATE_ROOT = utils.templating.get_template_root(__file__, 'templates')

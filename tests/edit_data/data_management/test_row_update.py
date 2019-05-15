@@ -7,9 +7,9 @@
 import unittest
 from unittest import mock
 
-from snowflakesqltoolsservice.edit_data.update_management import RowUpdate
-from snowflakesqltoolsservice.query import create_result_set, ResultSetStorageType
-from snowflakesqltoolsservice.query.contracts import DbColumn
+from snowflaketoolsservice.edit_data.update_management import RowUpdate
+from snowflaketoolsservice.query import create_result_set, ResultSetStorageType
+from snowflaketoolsservice.query.contracts import DbColumn
 from tests.utils import MockCursor
 
 
@@ -26,7 +26,7 @@ class TestRowUpdate(unittest.TestCase):
         self._result_set = create_result_set(ResultSetStorageType.IN_MEMORY, 0, 0)
         cursor = MockCursor(self._rows, ['IsTrue'])
 
-        with mock.patch('snowflakesqltoolsservice.query.in_memory_result_set.get_columns_info', new=mock.Mock()):
+        with mock.patch('snowflaketoolsservice.query.in_memory_result_set.get_columns_info', new=mock.Mock()):
             self._result_set.read_result_to_end(cursor)
 
         self._result_set.columns_info = [db_column]

@@ -7,12 +7,12 @@ import unittest
 from unittest import mock
 
 import tests.utils as utils
-from snowflakesqltoolsservice.query.batch import (
+from snowflaketoolsservice.query.batch import (
     Batch, BatchEvents, create_batch, create_result_set, ResultSetStorageType, SelectBatch
 )
-from snowflakesqltoolsservice.query.contracts import SaveResultsRequestParams, SelectionData
-from snowflakesqltoolsservice.query.in_memory_result_set import InMemoryResultSet
-from snowflakesqltoolsservice.query.file_storage_result_set import FileStorageResultSet
+from snowflaketoolsservice.query.contracts import SaveResultsRequestParams, SelectionData
+from snowflaketoolsservice.query.in_memory_result_set import InMemoryResultSet
+from snowflaketoolsservice.query.file_storage_result_set import FileStorageResultSet
 
 
 class TestBatch(unittest.TestCase):
@@ -30,7 +30,7 @@ class TestBatch(unittest.TestCase):
         return batch(self._batch_text, self._batch_id, self._selection_data, self._batch_events, storage_type)
 
     def create_and_execute_batch(self, batch):
-        with mock.patch('snowflakesqltoolsservice.query.batch.create_result_set', new=mock.Mock(return_value=self._result_set)):
+        with mock.patch('snowflaketoolsservice.query.batch.create_result_set', new=mock.Mock(return_value=self._result_set)):
             batch = self.create_batch_with(batch, ResultSetStorageType.IN_MEMORY)
             batch.execute(self._connection)
             return batch
@@ -65,7 +65,7 @@ class TestBatch(unittest.TestCase):
     def test_prop_batch_summary(self):
         batch_summary = mock.MagicMock()
 
-        with mock.patch('snowflakesqltoolsservice.query.contracts.BatchSummary.from_batch', new=mock.Mock(return_value=batch_summary)):
+        with mock.patch('snowflaketoolsservice.query.contracts.BatchSummary.from_batch', new=mock.Mock(return_value=batch_summary)):
             self.assert_properties('batch_summary', batch_summary)
 
     def test_prop_has_error(self):

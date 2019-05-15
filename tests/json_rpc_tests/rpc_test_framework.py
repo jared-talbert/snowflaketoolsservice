@@ -14,8 +14,8 @@ import threading
 from typing import Callable, List, Optional, Tuple
 from unittest import mock
 
-from snowflakesqltoolsservice.hosting.json_message import JSONRPCMessageType
-import snowflakesqltoolsservice.pgtoolsservice_main as pgtoolsservice_main
+from snowflaketoolsservice.hosting.json_message import JSONRPCMessageType
+import snowflaketoolsservice.pgtoolsservice_main as pgtoolsservice_main
 
 
 class RPCTestMessage:

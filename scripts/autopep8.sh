@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ ! -d 'snowflakesqltoolsservice' ] || [ ! -d 'tests' ]
+if [ ! -d 'snowflaketoolsservice' ] || [ ! -d 'tests' ]
 then
   echo "Script must be executed from root of repo"
   exit 1

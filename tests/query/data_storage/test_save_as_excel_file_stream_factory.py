@@ -6,9 +6,9 @@
 import unittest
 from unittest import mock
 
-from snowflakesqltoolsservice.query.data_storage import SaveAsExcelFileStreamFactory
-from snowflakesqltoolsservice.query.contracts import SaveResultsRequestParams
-from snowflakesqltoolsservice.query.data_storage import SaveAsExcelWriter, ServiceBufferFileStreamReader
+from snowflaketoolsservice.query.data_storage import SaveAsExcelFileStreamFactory
+from snowflaketoolsservice.query.contracts import SaveResultsRequestParams
+from snowflaketoolsservice.query.data_storage import SaveAsExcelWriter, ServiceBufferFileStreamReader
 
 
 class TestSaveAsExcelFileStreamFactory(unittest.TestCase):

@@ -5,8 +5,8 @@
 
 from parameterized import parameterized
 import unittest
-from snowflakesqltoolsservice.language.completion.packages.parseutils.tables import extract_tables
-from snowflakesqltoolsservice.language.completion.packages.parseutils.utils import find_prev_keyword, is_open_quote
+from snowflaketoolsservice.language.completion.packages.parseutils.tables import extract_tables
+from snowflaketoolsservice.language.completion.packages.parseutils.utils import find_prev_keyword, is_open_quote
 
 
 class TestParseUtils(unittest.TestCase):

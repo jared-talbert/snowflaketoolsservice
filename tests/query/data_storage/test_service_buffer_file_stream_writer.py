@@ -13,9 +13,9 @@ import datetime
 import psycopg2
 from psycopg2.extras import NumericRange, DateTimeRange, DateTimeTZRange, DateRange
 
-from snowflakesqltoolsservice.query.data_storage.service_buffer_file_stream_writer import ServiceBufferFileStreamWriter
-from snowflakesqltoolsservice.query.contracts import DbColumn
-from snowflakesqltoolsservice.parsers import datatypes
+from snowflaketoolsservice.query.data_storage.service_buffer_file_stream_writer import ServiceBufferFileStreamWriter
+from snowflaketoolsservice.query.contracts import DbColumn
+from snowflaketoolsservice.parsers import datatypes
 import tests.utils as utils
 
 

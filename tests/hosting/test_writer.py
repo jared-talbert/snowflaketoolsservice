@@ -10,8 +10,8 @@ import re
 import unittest
 import unittest.mock as mock
 
-from snowflakesqltoolsservice.hosting.json_writer import JSONRPCWriter
-from snowflakesqltoolsservice.hosting.json_message import JSONRPCMessage
+from snowflaketoolsservice.hosting.json_writer import JSONRPCWriter
+from snowflaketoolsservice.hosting.json_message import JSONRPCMessage
 import tests.utils as utils
 
 

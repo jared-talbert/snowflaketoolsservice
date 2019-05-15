@@ -8,11 +8,11 @@
 from typing import List
 import unittest
 
-from snowflakesqltoolsservice.language.contracts import (
+from snowflaketoolsservice.language.contracts import (
     CompletionItem, CompletionItemKind
 )
-from snowflakesqltoolsservice.language.keywords import DefaultCompletionHelper
-from snowflakesqltoolsservice.workspace.contracts import (
+from snowflaketoolsservice.language.keywords import DefaultCompletionHelper
+from snowflaketoolsservice.workspace.contracts import (
     Range
 )
 

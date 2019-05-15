@@ -10,10 +10,10 @@ from typing import Tuple
 import unittest
 from unittest.mock import MagicMock
 
-from snowflakesqltoolsservice.hosting import JSONRPCServer, NotificationContext, ServiceProvider   # noqa
-from snowflakesqltoolsservice.workspace import WorkspaceService, IntellisenseConfiguration    # noqa
-from snowflakesqltoolsservice.workspace.workspace import Workspace, ScriptFile
-from snowflakesqltoolsservice.workspace.contracts import (
+from snowflaketoolsservice.hosting import JSONRPCServer, NotificationContext, ServiceProvider   # noqa
+from snowflaketoolsservice.workspace import WorkspaceService, IntellisenseConfiguration    # noqa
+from snowflaketoolsservice.workspace.workspace import Workspace, ScriptFile
+from snowflaketoolsservice.workspace.contracts import (
     Configuration,
     DidChangeConfigurationParams,
     DidCloseTextDocumentParams,

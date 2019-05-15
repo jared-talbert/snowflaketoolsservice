@@ -9,7 +9,7 @@ import itertools
 from tests.language.completion.metadata import (MetaData, alias, name_join, fk_join, join, keyword,
                                                 schema, table, view, function, column, wildcard_expansion,
                                                 get_result, result_set, qual, no_qual)
-from snowflakesqltoolsservice.language.completion.pg_completion import PGCompletion
+from snowflaketoolsservice.language.completion.pg_completion import PGCompletion
 
 METADATA = {
     'tables': {

@@ -6,9 +6,9 @@
 import unittest
 from unittest import mock
 
-from snowflakesqltoolsservice.query.data_storage import SaveAsJsonFileStreamFactory
-from snowflakesqltoolsservice.query.contracts import SaveResultsRequestParams
-from snowflakesqltoolsservice.query.data_storage import SaveAsJsonWriter, ServiceBufferFileStreamReader
+from snowflaketoolsservice.query.data_storage import SaveAsJsonFileStreamFactory
+from snowflaketoolsservice.query.contracts import SaveResultsRequestParams
+from snowflaketoolsservice.query.data_storage import SaveAsJsonWriter, ServiceBufferFileStreamReader
 
 
 class TestSaveAsJsonFileStreamFactory(unittest.TestCase):

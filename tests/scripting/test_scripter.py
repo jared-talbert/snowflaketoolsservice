@@ -11,9 +11,9 @@ from unittest import mock
 from snow import Table, DataType, Schema, Database, Server, Column, CheckConstraint, ExclusionConstraint, ForeignKeyConstraint, IndexConstraint, \
     Rule, Trigger, Index
 from snow.objects.node_object import NodeCollection
-from snowflakesqltoolsservice.metadata.contracts.object_metadata import ObjectMetadata
-import snowflakesqltoolsservice.scripting.scripter as scripter
-from snowflakesqltoolsservice.scripting.scripting_service import ScriptingService
+from snowflaketoolsservice.metadata.contracts.object_metadata import ObjectMetadata
+import snowflaketoolsservice.scripting.scripter as scripter
+from snowflaketoolsservice.scripting.scripting_service import ScriptingService
 
 
 import tests.utils as utils

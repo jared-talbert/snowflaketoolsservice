@@ -8,9 +8,9 @@ import struct
 import io
 import json
 
-from snowflakesqltoolsservice.query.data_storage.service_buffer_file_stream_reader import ServiceBufferFileStreamReader
-from snowflakesqltoolsservice.query.contracts.column import DbColumn
-from snowflakesqltoolsservice.parsers import datatypes
+from snowflaketoolsservice.query.data_storage.service_buffer_file_stream_reader import ServiceBufferFileStreamReader
+from snowflaketoolsservice.query.contracts.column import DbColumn
+from snowflaketoolsservice.parsers import datatypes
 
 DECODING_METHOD = 'utf-8'
 

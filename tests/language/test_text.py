@@ -7,8 +7,8 @@
 
 import unittest
 
-from snowflakesqltoolsservice.language.text import TextUtilities
-from snowflakesqltoolsservice.workspace.contracts import (     # noqa
+from snowflaketoolsservice.language.text import TextUtilities
+from snowflaketoolsservice.workspace.contracts import (     # noqa
     Position,
     Range
 )

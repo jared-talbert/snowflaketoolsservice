@@ -4,7 +4,7 @@
 # --------------------------------------------------------------------------------------------
 
 import unittest
-from snowflakesqltoolsservice.language.completion.packages.prioritization import PrevalenceCounter
+from snowflaketoolsservice.language.completion.packages.prioritization import PrevalenceCounter
 
 
 class TestPrioritization(unittest.TestCase):

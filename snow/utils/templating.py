@@ -124,10 +124,10 @@ def _hash_source_list(sources: list) -> int:
 
 ##########################################################################
 #
-# pgAdmin 4 - Snowflake Tools
+# pgAdmin 4 - Postgres Tools
 #
 # Copyright (C) 2013 - 2017, The pgAdmin Development Team
-# This software is released under the Snowflake Licence
+# This software is released under the Postgres Licence
 #
 ##########################################################################
 
@@ -299,7 +299,7 @@ _EXTRA_KEYWORDS = {
     'varchar2': 3
 }
 
-# ScanKeyword function for Snowflake 9.5rc1
+# ScanKeyword function for Postgres 9.5rc1
 _KEYWORD_DICT = {
     "abort": 0, "absolute": 0, "access": 0, "action": 0, "add": 0, "admin": 0, "after": 0, "aggregate": 0, "all": 3,
     "also": 0, "alter": 0, "always": 0, "analyze": 3, "and": 3, "any": 3, "array": 3, "as": 3, "asc": 3,

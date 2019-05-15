@@ -6,10 +6,10 @@
 from parameterized import parameterized
 import unittest
 
-from snowflakesqltoolsservice.language.completion.packages.sqlcompletion import (
+from snowflaketoolsservice.language.completion.packages.sqlcompletion import (
     suggest_type, Database, Schema, Table, Column, View, Keyword,
     FromClauseItem, Function, Datatype, Alias, JoinCondition, Join)
-from snowflakesqltoolsservice.language.completion.packages.parseutils.tables import TableReference
+from snowflaketoolsservice.language.completion.packages.parseutils.tables import TableReference
 
 
 FUNCTIONS = [

@@ -10,7 +10,7 @@ from decimal import Decimal
 import uuid
 import datetime  # noqa
 
-from snowflakesqltoolsservice.parsers.datatype_parsers import get_parser
+from snowflaketoolsservice.parsers.datatype_parsers import get_parser
 
 
 class TestDataTypeParsers(unittest.TestCase):

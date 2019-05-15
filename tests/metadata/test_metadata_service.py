@@ -6,11 +6,11 @@
 import unittest
 import unittest.mock as mock
 
-from snowflakesqltoolsservice.connection import ConnectionService
-from snowflakesqltoolsservice.connection.contracts import ConnectionType
-from snowflakesqltoolsservice.metadata import MetadataService
-from snowflakesqltoolsservice.metadata.contracts import METADATA_LIST_REQUEST, MetadataListParameters, MetadataListResponse, MetadataType, ObjectMetadata
-from snowflakesqltoolsservice.utils import constants
+from snowflaketoolsservice.connection import ConnectionService
+from snowflaketoolsservice.connection.contracts import ConnectionType
+from snowflaketoolsservice.metadata import MetadataService
+from snowflaketoolsservice.metadata.contracts import METADATA_LIST_REQUEST, MetadataListParameters, MetadataListResponse, MetadataType, ObjectMetadata
+from snowflaketoolsservice.utils import constants
 from tests.mocks.service_provider_mock import ServiceProviderMock
 from tests.utils import MockConnection, MockCursor, MockRequestContext, MockThread
 

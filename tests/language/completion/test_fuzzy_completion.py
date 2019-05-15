@@ -6,7 +6,7 @@
 from parameterized import parameterized, param
 import unittest
 
-from snowflakesqltoolsservice.language.completion.pgcompleter import PGCompleter
+from snowflaketoolsservice.language.completion.pgcompleter import PGCompleter
 
 
 class TestFuzzyCompletion(unittest.TestCase):

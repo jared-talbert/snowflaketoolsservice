@@ -8,9 +8,9 @@ from itertools import product
 from unittest.mock import Mock
 from prompt_toolkit.document import Document
 
-from snowflakesqltoolsservice.language.completion.packages.parseutils.meta import FunctionMetadata, ForeignKey
-from snowflakesqltoolsservice.language.completion import PGCompleter
-from snowflakesqltoolsservice.language.completion.pg_completion import PGCompletion
+from snowflaketoolsservice.language.completion.packages.parseutils.meta import FunctionMetadata, ForeignKey
+from snowflaketoolsservice.language.completion import PGCompleter
+from snowflaketoolsservice.language.completion.pg_completion import PGCompletion
 
 qual = ['if_more_than_one_table', 'always']
 no_qual = ['if_more_than_one_table', 'never']

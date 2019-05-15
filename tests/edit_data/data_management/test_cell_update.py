@@ -6,9 +6,9 @@
 
 import unittest
 
-from snowflakesqltoolsservice.edit_data.update_management import CellUpdate
-from snowflakesqltoolsservice.query.contracts import DbColumn, DbCellValue
-from snowflakesqltoolsservice.edit_data.contracts import EditCell
+from snowflaketoolsservice.edit_data.update_management import CellUpdate
+from snowflaketoolsservice.query.contracts import DbColumn, DbCellValue
+from snowflaketoolsservice.edit_data.contracts import EditCell
 
 
 class TestCellUpdate(unittest.TestCase):

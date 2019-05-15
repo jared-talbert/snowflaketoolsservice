@@ -9,9 +9,9 @@ import unittest.mock as mock
 
 import json
 
-from snowflakesqltoolsservice.hosting.json_message import JSONRPCMessage, JSONRPCMessageType
-from snowflakesqltoolsservice.hosting.json_rpc_server import RequestContext
-import snowflakesqltoolsservice.utils as utils
+from snowflaketoolsservice.hosting.json_message import JSONRPCMessage, JSONRPCMessageType
+from snowflaketoolsservice.hosting.json_rpc_server import RequestContext
+import snowflaketoolsservice.utils as utils
 
 
 TValidation = TypeVar(Optional[Callable[[any], None]])

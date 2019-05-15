@@ -2,13 +2,13 @@ from cx_Freeze import setup, Executable
 
 # Dependencies are automatically detected, but it might need
 # fine tuning.
-include_files = [('./snowflakesqltoolsservice/pg_exes', './pg_exes')]
+include_files = [('./snowflaketoolsservice/snow_exes', './snow_exes')]
 buildOptions = dict(packages=['asyncio'], excludes=[], include_files=include_files)
 
 base = 'Console'
 
 executables = [
-    Executable('snowflakesqltoolsservice/snowflakesqltoolsservice_main.py', base=base)
+    Executable('snowflaketoolsservice/snowflaketoolsservice_main.py', base=base)
 ]
 
 setup(name='Snowflake Tools Service',
@@ -16,3 +16,6 @@ setup(name='Snowflake Tools Service',
       description='Carbon data protocol server implementation for Snowflake',
       options=dict(build_exe=buildOptions),
       executables=executables)
+
+
+      

@@ -8,9 +8,9 @@ from unittest import mock
 
 import psycopg2
 
-from snowflakesqltoolsservice.query import ExecutionState, Query, QueryExecutionSettings, QueryEvents, ResultSetStorageType
-from snowflakesqltoolsservice.query.contracts import SaveResultsRequestParams, SelectionData, DbColumn
-from snowflakesqltoolsservice.query_execution.contracts import ExecutionPlanOptions
+from snowflaketoolsservice.query import ExecutionState, Query, QueryExecutionSettings, QueryEvents, ResultSetStorageType
+from snowflaketoolsservice.query.contracts import SaveResultsRequestParams, SelectionData, DbColumn
+from snowflaketoolsservice.query_execution.contracts import ExecutionPlanOptions
 import tests.utils as utils
 
 
@@ -48,7 +48,7 @@ class TestQuery(unittest.TestCase):
         """Test that executing a query also executes all of the query's batches in order"""
 
         # If I call query.execute
-        with mock.patch('snowflakesqltoolsservice.query.data_storage.storage_data_reader.get_columns_info', new=self.get_columns_info_mock):
+        with mock.patch('snowflaketoolsservice.query.data_storage.storage_data_reader.get_columns_info', new=self.get_columns_info_mock):
             self.query.execute(self.connection)
 
         # Then each of the batches executed in order

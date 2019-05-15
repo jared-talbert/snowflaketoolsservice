@@ -8,6 +8,7 @@ from typing import List, Mapping, Tuple
 from psycopg2.extensions import Column, connection, cursor      # noqa
 
 
+
 class ServerConnection:
     """Wrapper for a psycopg2 connection that makes various properties easier to access"""
 

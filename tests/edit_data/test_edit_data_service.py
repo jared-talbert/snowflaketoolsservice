@@ -10,17 +10,17 @@ from unittest import mock
 import tests.utils as utils
 from unittest.mock import patch
 
-from snowflakesqltoolsservice.utils import constants
-from snowflakesqltoolsservice.edit_data.edit_data_service import EditDataService
+from snowflaketoolsservice.utils import constants
+from snowflaketoolsservice.edit_data.edit_data_service import EditDataService
 from tests.mocks.service_provider_mock import ServiceProviderMock
-from snowflakesqltoolsservice.edit_data.contracts import (
+from snowflaketoolsservice.edit_data.contracts import (
     UpdateCellRequest, CreateRowRequest, SessionOperationRequest, DeleteRowRequest, RevertCellRequest,
     RevertRowRequest, EditCommitRequest, DisposeRequest, InitializeEditParams
 )
-from snowflakesqltoolsservice.hosting.json_message import JSONRPCMessage
-from snowflakesqltoolsservice.hosting import RequestContext
-from snowflakesqltoolsservice.connection import ConnectionService
-from snowflakesqltoolsservice.query_execution.query_execution_service import QueryExecutionService
+from snowflaketoolsservice.hosting.json_message import JSONRPCMessage
+from snowflaketoolsservice.hosting import RequestContext
+from snowflaketoolsservice.connection import ConnectionService
+from snowflaketoolsservice.query_execution.query_execution_service import QueryExecutionService
 
 
 class TestEditDataService(unittest.TestCase):
@@ -50,7 +50,7 @@ class TestEditDataService(unittest.TestCase):
         self._initialize_edit_request.object_type = 'Table'
         self._initialize_edit_request.owner_uri = 'testuri'
 
-    @patch('snowflakesqltoolsservice.edit_data.edit_data_service.DataEditorSession')
+    @patch('snowflaketoolsservice.edit_data.edit_data_service.DataEditorSession')
     def test_initialization(self, mockdataeditorsession):
         queue = Queue()
         message = JSONRPCMessage.from_dictionary({'id': '123', 'method': 'edit/initialize', 'params': {}})

@@ -6,9 +6,9 @@
 import unittest
 from unittest import mock
 
-from snowflakesqltoolsservice.query.contracts import DbColumn, DbCellValue
-from snowflakesqltoolsservice.query.data_storage import SaveAsExcelWriter
-from snowflakesqltoolsservice.query_execution.contracts import SaveResultsAsExcelRequestParams
+from snowflaketoolsservice.query.contracts import DbColumn, DbCellValue
+from snowflaketoolsservice.query.data_storage import SaveAsExcelWriter
+from snowflaketoolsservice.query_execution.contracts import SaveResultsAsExcelRequestParams
 
 
 class TestSaveAsExcelWriter(unittest.TestCase):

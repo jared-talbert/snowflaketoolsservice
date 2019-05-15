@@ -6,7 +6,7 @@
 import unittest
 from collections import namedtuple
 
-from snowflakesqltoolsservice.query.column_info import get_columns_info
+from snowflaketoolsservice.query.column_info import get_columns_info
 import tests.utils as utils
 
 

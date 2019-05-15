@@ -1,4 +1,4 @@
-from snowflakesqltoolsservice.scripting.contracts import ScriptOperation
+from snowflaketoolsservice.scripting.contracts import ScriptOperation
 
 
 SCRIPT_META_DATA: dict = {

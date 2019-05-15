@@ -9,14 +9,14 @@ import time
 import unittest
 import unittest.mock as mock
 
-from snowflakesqltoolsservice.hosting.json_rpc_server import (
+from snowflaketoolsservice.hosting.json_rpc_server import (
     JSONRPCServer,
     IncomingMessageConfiguration,
     NotificationContext, RequestContext
 )
-from snowflakesqltoolsservice.hosting.json_message import JSONRPCMessage, JSONRPCMessageType
-from snowflakesqltoolsservice.hosting.json_reader import JSONRPCReader
-from snowflakesqltoolsservice.hosting.json_writer import JSONRPCWriter
+from snowflaketoolsservice.hosting.json_message import JSONRPCMessage, JSONRPCMessageType
+from snowflaketoolsservice.hosting.json_reader import JSONRPCReader
+from snowflaketoolsservice.hosting.json_writer import JSONRPCWriter
 import tests.utils as utils
 
 

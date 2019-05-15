@@ -7,11 +7,11 @@ import unittest
 
 import unittest.mock as mock
 
-from snowflakesqltoolsservice.capabilities.capabilities_service import CapabilitiesService
-from snowflakesqltoolsservice.capabilities.contracts import InitializeResult, CapabilitiesResult
-from snowflakesqltoolsservice.hosting import JSONRPCServer, ServiceProvider, IncomingMessageConfiguration
-from snowflakesqltoolsservice.utils import constants
-from snowflakesqltoolsservice.workspace import WorkspaceService
+from snowflaketoolsservice.capabilities.capabilities_service import CapabilitiesService
+from snowflaketoolsservice.capabilities.contracts import InitializeResult, CapabilitiesResult
+from snowflaketoolsservice.hosting import JSONRPCServer, ServiceProvider, IncomingMessageConfiguration
+from snowflaketoolsservice.utils import constants
+from snowflaketoolsservice.workspace import WorkspaceService
 import tests.utils as utils
 
 

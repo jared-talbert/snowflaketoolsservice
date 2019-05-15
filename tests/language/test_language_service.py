@@ -13,31 +13,31 @@ from parameterized import parameterized
 
 from prompt_toolkit.completion import Completion
 
-from snowflakesqltoolsservice.workspace.contracts.common import TextDocumentPosition, Position     # noqa
-from snowflakesqltoolsservice.hosting import (     # noqa
+from snowflaketoolsservice.workspace.contracts.common import TextDocumentPosition, Position     # noqa
+from snowflaketoolsservice.hosting import (     # noqa
     JSONRPCServer,
     NotificationContext,
     RequestContext,
     ServiceProvider
 )
-from snowflakesqltoolsservice.language import LanguageService
-from snowflakesqltoolsservice.language.operations_queue import OperationsQueue
-from snowflakesqltoolsservice.language.script_parse_info import ScriptParseInfo    # noqa
-from snowflakesqltoolsservice.language.contracts import (      # noqa
+from snowflaketoolsservice.language import LanguageService
+from snowflaketoolsservice.language.operations_queue import OperationsQueue
+from snowflaketoolsservice.language.script_parse_info import ScriptParseInfo    # noqa
+from snowflaketoolsservice.language.contracts import (      # noqa
     LanguageFlavorChangeParams, CompletionItem, CompletionItemKind,
     INTELLISENSE_READY_NOTIFICATION, IntelliSenseReadyParams,
     DocumentFormattingParams, DocumentRangeFormattingParams, FormattingOptions, TextEdit
 )
-from snowflakesqltoolsservice.utils import constants
-from snowflakesqltoolsservice.workspace import (       # noqa
+from snowflaketoolsservice.utils import constants
+from snowflaketoolsservice.workspace import (       # noqa
     WorkspaceService, TextDocumentIdentifier, Configuration,
     PGSQLConfiguration, ScriptFile, Workspace
 )
-from snowflakesqltoolsservice.workspace.contracts import (
+from snowflaketoolsservice.workspace.contracts import (
     Range
 )
-from snowflakesqltoolsservice.connection import ConnectionService, ConnectionInfo
-from snowflakesqltoolsservice.connection.contracts import ConnectionDetails
+from snowflaketoolsservice.connection import ConnectionService, ConnectionInfo
+from snowflaketoolsservice.connection.contracts import ConnectionDetails
 from tests.mock_request_validation import RequestFlowValidator
 import tests.utils as utils
 
@@ -235,7 +235,7 @@ class TestLanguageService(unittest.TestCase):
         refresher_mock = mock.MagicMock()
         refresh_method_mock = mock.MagicMock()
         refresher_mock.refresh = refresh_method_mock
-        patch_path = 'snowflakesqltoolsservice.language.operations_queue.CompletionRefresher'
+        patch_path = 'snowflaketoolsservice.language.operations_queue.CompletionRefresher'
         with mock.patch(patch_path) as refresher_patch:
             refresher_patch.return_value = refresher_mock
             task: threading.Thread = service.on_connect(conn_info)

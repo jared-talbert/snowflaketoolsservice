@@ -8,10 +8,10 @@ import unittest
 import unittest.mock as mock
 from urllib.parse import urlparse
 
-from snowflakesqltoolsservice.connection.contracts import ConnectionDetails
-from snowflakesqltoolsservice.object_explorer.contracts import NodeInfo
-import snowflakesqltoolsservice.object_explorer.routing as routing
-from snowflakesqltoolsservice.object_explorer.session import ObjectExplorerSession
+from snowflaketoolsservice.connection.contracts import ConnectionDetails
+from snowflaketoolsservice.object_explorer.contracts import NodeInfo
+import snowflaketoolsservice.object_explorer.routing as routing
+from snowflaketoolsservice.object_explorer.session import ObjectExplorerSession
 
 
 class TestObjectExplorerRouting(unittest.TestCase):

@@ -6,9 +6,9 @@
 import unittest
 from unittest import mock
 
-from snowflakesqltoolsservice.query.contracts import DbColumn, DbCellValue
-from snowflakesqltoolsservice.query.data_storage import SaveAsJsonWriter
-from snowflakesqltoolsservice.query_execution.contracts import SaveResultsAsJsonRequestParams
+from snowflaketoolsservice.query.contracts import DbColumn, DbCellValue
+from snowflaketoolsservice.query.data_storage import SaveAsJsonWriter
+from snowflaketoolsservice.query_execution.contracts import SaveResultsAsJsonRequestParams
 
 
 class TestSaveAsJsonWriter(unittest.TestCase):
